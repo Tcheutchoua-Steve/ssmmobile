@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.ssm.ssm.ui.fragments.SecondIntroFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SSM"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textSize="45dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tmp_timetable" />
+
+    </LinearLayout>
+
+<!--    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/ic_announcement" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_comment" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Communicate with peers on important issues"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="93dp" />
+    </RelativeLayout>
+
+</FrameLayout>
