@@ -98,4 +98,6 @@
     <string name="title_activity_login">Login</string>
     <string name="facebook_app_id">1187634201301537</string>
     <string name="fb_login_protocol_scheme">fb1187634201301537</string>
+    <string name="title_activity_home">SSM - Home</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

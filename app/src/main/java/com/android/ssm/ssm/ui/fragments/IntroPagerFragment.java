@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 
-import com.android.ssm.ssm.ui.activities.LoginActivity;
+import com.android.ssm.ssm.ui.activities.HomeActivity;
 import com.cleveroad.slidingtutorial.PageFragment;
 import com.cleveroad.slidingtutorial.PresentationPagerFragment;
 
@@ -72,7 +72,7 @@ public class IntroPagerFragment extends PresentationPagerFragment {
     @Override
     protected boolean onSkipButtonClicked(View skipButton) {
         //TODO start main activity and save intro indicating that this screen was already launched
-        startActivity(new Intent(getActivity(), LoginActivity.class));
+        startActivity(new Intent(getActivity(), HomeActivity.class));
         return super.onSkipButtonClicked(skipButton);
     }
 }

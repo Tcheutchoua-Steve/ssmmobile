@@ -2,7 +2,46 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="app_bar_height">180dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="bottom_linear_layout_height">50dp</dimen>
+    <dimen name="bottom_linear_layout_text_height">17sp</dimen>
+    <dimen name="space_between_input_fields">20dp</dimen>
+
+    <dimen name="space_between_text_and_image_in_list">10dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="card_radius">15dp</dimen>
+    <dimen name="card_inner_layout_radius">17dp</dimen>
+    <dimen name="card_inner_layout_padding">10dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_margin_bottom">8dp</dimen>
+    <dimen name="card_margin_top">8dp</dimen>
+    <dimen name="card_header_text_padding_left">15dp</dimen>
+    <dimen name="card_header_text_padding_bottom">15dp</dimen>
+    <dimen name="card_header_text_padding_top">5dp</dimen>
+
+    <dimen name="nested_scroll_view_padding">10dp</dimen>
+
+    <dimen name="card_header_size">20sp</dimen>
+    <dimen name="card_text_size">18sp</dimen>
+
+    <dimen name="divider_margin_bottom">5dp</dimen>
+
+    <dimen name="icon_margin_left_right">5dp</dimen>
+
+    <!-- Dimension resources for the user profile animation -->
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- dimension of the MainActivity Fragments margin and padding -->
+    <dimen name="main_activity_fragment_horizontal_margin">10dp</dimen>
+    <dimen name="main_activity_fragment_vertical_margin">10dp</dimen>
+    <dimen name="img_placeholder">60dp</dimen>
+    <dimen name="linearHeight">54dp</dimen>
+    <dimen name="alertTextsize">20dp</dimen>
+    <dimen name="emoji_height">30dp</dimen>
 </resources>
