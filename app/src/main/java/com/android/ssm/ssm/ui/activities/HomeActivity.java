@@ -2,6 +2,7 @@ package com.android.ssm.ssm.ui.activities;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -26,6 +27,7 @@ public class HomeActivity extends AppCompatActivity implements SFMFragment.OnFra
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    private int mCurrentTab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,33 @@ public class HomeActivity extends AppCompatActivity implements SFMFragment.OnFra
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        if (tabLayout != null) {
+            tabLayout.setupWithViewPager(mViewPager);
+        }
 
+        if (tabLayout != null) {
+            tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+                @Override
+                public void onTabSelected(TabLayout.Tab tab) {
+                    mCurrentTab = tab.getPosition();
+                    mViewPager.setCurrentItem(mCurrentTab);
+
+                    invalidateOptionsMenu();
+
+                }
+
+                @Override
+                public void onTabUnselected(TabLayout.Tab tab) {
+
+                }
+
+                @Override
+                public void onTabReselected(TabLayout.Tab tab) {
+
+                }
+            });
+        }
     }
 
 
@@ -101,7 +129,6 @@ public class HomeActivity extends AppCompatActivity implements SFMFragment.OnFra
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
             return 4;
         }
 
