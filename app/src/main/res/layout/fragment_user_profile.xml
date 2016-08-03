@@ -30,6 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="275dp"
                 android:background="@color/greyd"
+                android:src="@drawable/material"
                 android:scaleType="centerCrop"
                 android:tint="#11000000"
                 app:layout_collapseMode="parallax"
@@ -78,7 +79,7 @@
         android:background="@color/colorPrimary"
         app:layout_anchor="@id/main_framelayout_title"
         app:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:title="SSM">
+        app:title="">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -102,8 +103,8 @@
     </android.support.v7.widget.Toolbar>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="@dimen/com_facebook_profilepictureview_preset_size_normal"
-        android:layout_height="@dimen/com_facebook_profilepictureview_preset_size_normal"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/circle_drawable"
         android:src="@drawable/ic_person"
